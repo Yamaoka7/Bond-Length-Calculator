@@ -1,0 +1,9 @@
+def calculate_bond_length(atom1, atom2):
+    # Assume simple linear distance calculation for simplicity
+    return math.sqrt((atom1[0] - atom2[0])**2 + (atom1[1] - atom2[1])**2 + (atom1[2] - atom2[2])**2)
+
+# Example usage:
+atom1 = (0, 0, 0)  # XYZ coordinates of atom 1
+atom2 = (1, 1, 1)  # XYZ coordinates of atom 2
+bond_length = calculate_bond_length(atom1, atom2)
+print("Bond length:", bond_length, "angstroms")
